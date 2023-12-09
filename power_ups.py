@@ -16,8 +16,8 @@ class PowerUp(pygame.sprite.Sprite):
         If image is provided, it will be scaled to the specified width and height.
         """
 
-    def _init_(self, color, width, height, image=None):
-        super()._init_()
+    def __init__(self, color, width, height, image=None):
+        super().__init__()
 
         if image is None:
             self.image = pygame.Surface([width, height])
